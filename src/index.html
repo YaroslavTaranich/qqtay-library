@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-center mt-20">Buttons</h2>
+        <div class="d-flex f-space-between m20">
+            <button class="btn ">Button</button>
+            <button class="btn btn-primary " id="first">Primary</button>
+            <button class="btn btn-dark " data-count="second">Dark</button>
+            <button class="btn btn-danger ">Danger</button>
+            <button class="btn btn-warning ">Warning</button>
+            <button class="btn btn-success ">Secccess</button>
+        </div>
+
+        <div class="code-view">
+            <pre class="hljs"
+                style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(51, 51, 51); background: rgb(248, 248, 248);"><span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">button</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"btn"</span>&gt;</span>Button<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">button</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">button</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"btn btn-primary"</span>&gt;</span>Primary<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">button</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">button</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"btn btn-dark"</span>&gt;</span>Dark<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">button</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">button</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"btn btn-danger"</span>&gt;</span>Danger<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">button</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">button</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"btn btn-warning"</span>&gt;</span>Warning<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">button</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">button</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"btn btn-success"</span>&gt;</span>Secccess<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">button</span>&gt;</span></pre>
+        </div>
+        <hr>
+
+
+
+        <!-- <button class="btn btn-success">Click me</button> -->
+
+        <!-- <button class="btn btn-danger">Click me</button> -->
+
+
+        <!-- dropdown menu -->
+        <h2 class="text-center mt-20 mb-20">Dropdown menu</h2>
+
+        <div class="dropdown-wrapper d-flex f-space-around mb-20">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" id="dropdownMenuButton">Dropdown button</button>
+                <div class="dropdown-menu" data-toggle-id="dropdownMenuButton">
+                    <a href="#" class="dropdown-item">This</a>
+                    <a href="#" class="dropdown-item">Is</a>
+                    <a href="#" class="dropdown-item">Dropdown</a>
+                    <a href="#" class="dropdown-item">Menu</a>
+                </div>
+            </div>
+        </div>
+        <div class="code-view">
+            <pre class="hljs"
+                style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(51, 51, 51); background: rgb(248, 248, 248);"><span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"dropdown"</span>&gt;</span>
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">button</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"btn dropdown-toggle"</span> <span class="hljs-attr" style="color: teal;">id</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"dropdownMenuButton"</span>&gt;</span>Dropdown button<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">button</span>&gt;</span>
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"dropdown-menu"</span> <span class="hljs-attr" style="color: teal;">data-toggle-id</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"dropdownMenuButton"</span>&gt;</span>
+                        <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">a</span> <span class="hljs-attr" style="color: teal;">href</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"#"</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"dropdown-item"</span>&gt;</span>This<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">a</span>&gt;</span>
+                        <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">a</span> <span class="hljs-attr" style="color: teal;">href</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"#"</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"dropdown-item"</span>&gt;</span>Is<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">a</span>&gt;</span>
+                        <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">a</span> <span class="hljs-attr" style="color: teal;">href</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"#"</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"dropdown-item"</span>&gt;</span>Dropdown<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">a</span>&gt;</span>
+                        <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">a</span> <span class="hljs-attr" style="color: teal;">href</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"#"</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"dropdown-item"</span>&gt;</span>Menu<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">a</span>&gt;</span>
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span></pre>
+        </div>
+
+
+        <hr>
+
+
+
+
+
+        <!-- card -->
+        <h2 class="text-center mt-20 mb-20">Cards with content</h2>
+
+
+        <div class="goods d-flex f-space-around mb-20">
+            <div class="card">
+                <img class="card-img" src="http://www.rosphoto.com/images/u/articles/1510/7_5.jpg" alt="photo">
+                <div class="card-body">
+                    <div class="card-title">Card Title</div>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae reiciendis
+                        at consequatur quasi quam, saepe perferendis quo pariatur dolores ab repudiandae rem eligendi.
+                        Aliquid.</p>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#cardModal">Open Modal</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img"
+                    src="https://mediaproxy.salon.com/width/1200/https://media.salon.com/2017/10/crab-nebula-compressor.jpg"
+                    alt="photo">
+                <div class="card-body">
+                    <div class="card-title">Card Title 2</div>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae reiciendis
+                        at consequatur quasi quam, saepe perferendis quo pariatur dolores ab repudiandae rem eligendi.
+                        Aliquid.</p>
+
+                    <button class="btn btn-dark">Link ME</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="https://www.interfax.ru/ftproot/photos/photostory/2019/07/09/week4_700.jpg"
+                    alt="photo">
+                <div class="card-body">
+                    <div class="card-title">Card Title 3</div>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae reiciendis
+                        at consequatur quasi quam, saepe perferendis quo pariatur dolores ab repudiandae rem eligendi.
+                        Aliquid.</p>
+
+                    <button class="btn">Link ME</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="code-view">
+            <pre class="hljs"
+                style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(51, 51, 51); background: rgb(248, 248, 248);"><span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"goods d-flex f-space-around"</span>&gt;</span>
+        <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"card"</span>&gt;</span>
+            <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">img</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"card-img"</span> <span class="hljs-attr" style="color: teal;">src</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"//via.placeholder.com/500x250"</span> <span class="hljs-attr" style="color: teal;">alt</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"photo"</span>&gt;</span>
+            <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"card-body"</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"card-title"</span>&gt;</span>Card Title<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">p</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"card-text"</span>&gt;</span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">p</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">button</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"btn btn-primary"</span> <span class="hljs-attr" style="color: teal;">data-toggle</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"modal"</span> <span class="hljs-attr" style="color: teal;">data-target</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"#cardModal"</span>&gt;</span>Open Modal<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">button</span>&gt;</span>
+            <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+        <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span></pre>
+        </div>
+
+        <h3 class="text-center mt-20 mb-20">Card modal window</h3>
+
+        <div class="code-view">
+            <pre class="hljs"
+                style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(51, 51, 51); background: rgb(248, 248, 248);"><span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"modal"</span> <span class="hljs-attr" style="color: teal;">id</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"cardModal"</span>&gt;</span>
+        <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"modal-dialog"</span>&gt;</span>
+            <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"modal-content"</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">button</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"close"</span> <span class="hljs-attr" style="color: teal;">data-close</span>&gt;</span>
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">span</span>&gt;</span>&amp;times;<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">span</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">button</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"modal-header"</span>&gt;</span>
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"modal-title"</span>&gt;</span>
+                        Card Modal Window!
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"modal-body"</span>&gt;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatem dolore non
+                    incidunt harum libero minus amet dicta, autem, ex odio nisi iure optio quaerat. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Inventore ipsum similique necessitatibus officia
+                    mollitia.
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"modal-footer"</span>&gt;</span>
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">button</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"btn btn-danger"</span> <span class="hljs-attr" style="color: teal;">data-close</span>&gt;</span>Close<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">button</span>&gt;</span>
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">button</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"btn btn-success"</span>&gt;</span>Do Something<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">button</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+            <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+        <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span></pre>
+        </div>
+        <div class="modal" id="cardModal">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <button class="close" data-close>
+                        <span>&times;</span>
+                    </button>
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            Card Modal Window!
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatem dolore non
+                        incidunt harum libero minus amet dicta, autem, ex odio nisi iure optio quaerat. Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Inventore ipsum similique necessitatibus officia
+                        mollitia.
+                    </div>
+                    <div class="modal-footer">
+
+                        <button class="btn btn-danger" data-close>Close</button>
+                        <button class="btn btn-success">Do Something</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- modal -->
+
+        <h2 class="text-center mt-20">Modal Windows</h2>
+
+        <div class="btn-wrap d-flex f-space-around mt-20 mb-20">
+            <a href="#" class="btn btn-primary" id="trigger" data-toggle="modal" data-target="#Modal">Open Example
+                Modal</a>
+        </div>
+
+        <p>To create modal window whith click on some trigger from Javascript use this code:</p>
+        <div class="code-view">
+            <pre class="hljs"
+                style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(51, 51, 51); background: rgb(248, 248, 248);">$(<span class="hljs-string" style="color: rgb(221, 17, 68);">'#trigger'</span>).click(() =&gt; $(<span class="hljs-string" style="color: rgb(221, 17, 68);">'#trigger'</span>).createModal({
+                text: {
+                    title: <span class="hljs-string" style="color: rgb(221, 17, 68);">'Modal from JS'</span>,
+                    body: <span class="hljs-string" style="color: rgb(221, 17, 68);">'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatem dolore non incidunt harum libero minus amet dicta, autem, ex odio nisi iure optio quaerat.'</span>
+                },
+                btns: {
+                    count: <span class="hljs-number" style="color: teal;">3</span>, <span class="hljs-comment" style="color: rgb(153, 153, 136); font-style: italic;">// count of buttons</span>
+                    settings: [
+                        [
+                            <span class="hljs-string" style="color: rgb(221, 17, 68);">'Close'</span>, <span class="hljs-comment" style="color: rgb(153, 153, 136); font-style: italic;">// name of button</span>
+                            [<span class="hljs-string" style="color: rgb(221, 17, 68);">'btn-danger'</span>, <span class="hljs-string" style="color: rgb(221, 17, 68);">'mr-10'</span>], <span class="hljs-comment" style="color: rgb(153, 153, 136); font-style: italic;">// classes for button</span>
+                            <span class="hljs-literal" style="color: teal;">true</span>    <span class="hljs-comment" style="color: rgb(153, 153, 136); font-style: italic;">// close modal window</span>
+                        ],
+                        [
+                            <span class="hljs-string" style="color: rgb(221, 17, 68);">'Action'</span>,
+                            [<span class="hljs-string" style="color: rgb(221, 17, 68);">'btn-success'</span>],
+                            <span class="hljs-literal" style="color: teal;">false</span>,
+                            () =&gt; { <span class="hljs-comment" style="color: rgb(153, 153, 136); font-style: italic;">// callback </span>
+                                alert(<span class="hljs-string" style="color: rgb(221, 17, 68);">'Some Action'</span>);
+                            }
+                        ],
+                        [
+                            <span class="hljs-string" style="color: rgb(221, 17, 68);">'One More'</span>,
+                            [<span class="hljs-string" style="color: rgb(221, 17, 68);">'btn-warning'</span>, <span class="hljs-string" style="color: rgb(221, 17, 68);">'ml-10'</span>],
+                            <span class="hljs-literal" style="color: teal;">false</span>,
+                            () =&gt; {
+                                alert(<span class="hljs-string" style="color: rgb(221, 17, 68);">'Another Action'</span>);
+                            }
+                        ]
+                    ]
+                }
+            }));</pre>
+        </div>
+        <p>Trigger must look like this:</p>
+        <div class="code-view">
+            <pre class="hljs"
+                style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(51, 51, 51); background: rgb(248, 248, 248);"><span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">a</span> <span class="hljs-attr" style="color: teal;">href</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"#"</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"btn btn-primary"</span> <span class="hljs-attr" style="color: teal;">id</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"trigger"</span> <span class="hljs-attr" style="color: teal;">data-toggle</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"modal"</span> <span class="hljs-attr" style="color: teal;">data-target</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"#Modal"</span>&gt;</span>Open Example Modal<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">a</span>&gt;</span></pre>
+        </div>
+
+        <!-- <div class="modal" id="exempleModal">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <button class="close" data-close>
+                        <span>&times;</span>
+                    </button>
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            Title
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatem dolore non
+                        incidunt harum libero minus amet dicta, autem, ex odio nisi iure optio quaerat.
+                    </div>
+                    <div class="modal-footer">
+
+                        <button class="btn btn-danger" data-close>Close</button>
+                        <button class="btn btn-success">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <hr>
+
+        <!-- tabs -->
+
+        <h2 class="text-center mt-20">Tabs</h2>
+
+        <div class="tab mt-20 mb-20 block-center">
+            <div class="tab-panel" data-tabpanel>
+                <div class="tab-item tab-item--active">Content 1</div>
+                <div class="tab-item">Content 2</div>
+                <div class="tab-item">Content 3</div>
+                <div class="tab-item">Content 4</div>
+
+            </div>
+            <div class="tab-content tab-content--active">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3> Id est dolorem qui porro quibusdam!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, consequuntur sapiente! Magni
+                aspernatur eius maxime nisi est consectetur voluptas in fugiat, rerum ea accusantium facere et numquam
+                ducimus provident voluptatibus, repellendus totam dicta maiores!
+            </div>
+            <div class="tab-content">
+                <h3>Id est dolorem qui porro quibusdam!</h3>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, consequuntur sapiente! Magni
+                aspernatur eius maxime nisi est consectetur voluptas in fugiat, rerum ea accusantium facere et numquam
+                ducimus provident voluptatibus, repellendus totam dicta maiores!
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, mollitia nulla? Eligendi ullam alias
+                sunt quibusdam. Accusamus cupiditate nemo repudiandae provident necessitatibus!
+            </div>
+            <div class="tab-content">
+                <h3>This is a picture!</h3>
+                <img class="w-100" src="https://ichef.bbci.co.uk/images/ic/1920x1080/p09m1qj6.jpg" alt="warship">
+            </div>
+            <div class="tab-content">
+                <h3>Lorem, ipsum dolor.</h3>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, consequuntur sapiente! Magni
+                aspernatur eius maxime nisi est consectetur voluptas in fugiat, rerum ea accusantium facere et numquam
+                ducimus provident voluptatibus, repellendus totam dicta maiores!
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, mollitia nulla? Eligendi ullam alias
+                sunt quibusdam. Accusamus cupiditate nemo repudiandae provident necessitatibus!
+            </div>
+        </div>
+
+        <div class="code-view">
+            <pre class="hljs"
+                style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(51, 51, 51); background: rgb(248, 248, 248);"><span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"tab block-center"</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"tab-panel"</span> <span class="hljs-attr" style="color: teal;">data-tabpanel</span>&gt;</span>
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"tab-item tab-item--active"</span>&gt;</span>Content 1<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"tab-item"</span>&gt;</span>Content 2<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"tab-item"</span>&gt;</span>Content 3<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"tab-item"</span>&gt;</span>Content 4<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"tab-content tab-content--active"</span>&gt;</span>
+                    First Active Tab
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"tab-content"</span>&gt;</span>
+                    Second Tab
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"tab-content"</span>&gt;</span>
+                   One more Tab    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"tab-content"</span>&gt;</span>
+                    Last Tab!
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+            <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span></pre>
+        </div>
+        <hr>
+
+        <!-- accordion  -->
+
+        <h2 class="text-center mt-20 mb-20">Accordion</h2>
+
+        <div class="accordion mt-20 mb-20 block-center">
+            <div class="accordion-head">
+                <span>Collapse 1st ellement</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-inner">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur delectus officia doloremque
+                    impedit dignissimos voluptatem obcaecati dolor debitis, corporis quae sapiente quo praesentium quia
+                    repellat ratione provident quis. Soluta corporis ipsum aut ab.
+                </div>
+            </div>
+            <div class="accordion-head">
+                <span>Collapse 2nd ellement</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-inner">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur delectus officia doloremque
+                    impedit dignissimos voluptatem obcaecati dolor debitis, corporis quae sapiente quo praesentium quia
+                    repellat ratione provident quis. Soluta corporis ipsum aut ab.
+                </div>
+            </div>
+            <div class="accordion-head">
+
+                <span>Collapse 3d ellement</span>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-inner">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur delectus officia doloremque
+                    impedit dignissimos voluptatem obcaecati dolor debitis, corporis quae sapiente quo praesentium quia
+                    repellat ratione provident quis. Soluta corporis ipsum aut ab.
+                </div>
+            </div>
+        </div>
+
+        <div class="code-view">
+            <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(51, 51, 51); background: rgb(248, 248, 248);"><span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"accordion mt-20 mb-20 block-center"</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"accordion-head"</span>&gt;</span>
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">span</span>&gt;</span>Collapse 1st ellement<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">span</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"accordion-content"</span>&gt;</span>
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"accordion-inner"</span>&gt;</span>
+                        Lorem ipsum dolor.
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"accordion-head"</span>&gt;</span>
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">span</span>&gt;</span>Collapse 2nd ellement<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">span</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"accordion-content"</span>&gt;</span>
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"accordion-inner"</span>&gt;</span>
+                        Lorem ipsum dolor.
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"accordion-head"</span>&gt;</span>
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">span</span>&gt;</span>Collapse 3d ellement<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">span</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"accordion-content"</span>&gt;</span>
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"accordion-inner"</span>&gt;</span>
+                        Lorem ipsum dolor. 
+                    <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+            <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span></pre>
+        </div>
+        <hr>
+
+        <!-- slider -->
+
+        <h2 class="text-center mt-20 mb-20">Carouel</h2>
+
+        <div id="carousel-wrapper"></div>
+
+        <p>To create Caousel module from Javascript first you must create block with class "carousel-wrapper"</p>
+        <div class="code-view">
+            <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(51, 51, 51); background: rgb(248, 248, 248);"><span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">id</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"carousel-wrapper"</span>&gt;</span><span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span></pre>
+        </div>
+        <p>You can create object with settings of carousel. At now it only use content[0] as 'src' and content[1] as 'alt'</p>
+        <div class="code-view">
+            <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(51, 51, 51); background: rgb(248, 248, 248);"><span class="hljs-keyword" style="color: rgb(51, 51, 51); font-weight: 700;">const</span> carouselSettings = {
+                content: 
+                [
+                    [
+                        <span class="hljs-string" style="color: rgb(221, 17, 68);">'https://static.mk.ru/upload/entities/2020/05/19/17/articles/facebookPicture/ee/37/29/b0/d778546d8aaeb744ba9d647437d2ec2a.jpg'</span>,
+                        <span class="hljs-string" style="color: rgb(221, 17, 68);">'alt text 1'</span>
+                    ],
+                    [
+                        <span class="hljs-string" style="color: rgb(221, 17, 68);">'https://сезоны-года.рф/sites/default/files/images/shkolnikam/more.jpg'</span>,
+                        <span class="hljs-string" style="color: rgb(221, 17, 68);">'alt text 2'</span>
+                    ],
+                    [
+                        <span class="hljs-string" style="color: rgb(221, 17, 68);">'https://img.gazeta.ru/files3/869/7947869/upload-shutterstock_192051191-pic4_zoom-1500x1500-61458.jpg'</span>,
+                        <span class="hljs-string" style="color: rgb(221, 17, 68);">'alt text 3'</span>
+                    ]
+                ]
+            };</pre>
+        </div>
+        <p>And then use this code to add slider into wrapper:</p>
+        <div class="code-view">
+            <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(51, 51, 51); background: rgb(248, 248, 248);">$(<span class="hljs-string" style="color: rgb(221, 17, 68);">'#carousel-wrapper'</span>).createCarousel(carouselSettings);
+            </pre>
+        </div>
+
+        <hr>
+
+        <h2 class="text-center mt-20 mb-20">Animations</h2>
+
+        <div class="d-flex f-space-around">
+            <button class="btn btn-danger" id="out">Fade Out</button>
+            <button class="btn btn-warning" id="in">Fade In</button>
+            <button class="btn btn-success" id="toggle">Fade Toggle</button>
+        </div>
+        <div class="d-flex f-space-around">
+            <div class="fade-preview in-out"></div>
+            <div class="fade-preview toggle"></div>
+        </div>
+
+         <div class="code-view">
+            <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(51, 51, 51); background: rgb(248, 248, 248);"><span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"d-flex f-space-around"</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">button</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"btn btn-danger"</span> <span class="hljs-attr" style="color: teal;">id</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"out"</span>&gt;</span>Fade Out<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">button</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">button</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"btn btn-warning"</span> <span class="hljs-attr" style="color: teal;">id</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"in"</span>&gt;</span>Fade In<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">button</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">button</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"btn btn-success"</span> <span class="hljs-attr" style="color: teal;">id</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"toggle"</span>&gt;</span>Fade Toggle<span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">button</span>&gt;</span>
+            <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+            <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"d-flex f-space-around"</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"fade-preview in-out"</span>&gt;</span><span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+                <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;<span class="hljs-name" style="color: navy; font-weight: 400;">div</span> <span class="hljs-attr" style="color: teal;">class</span>=<span class="hljs-string" style="color: rgb(221, 17, 68);">"fade-preview toggle"</span>&gt;</span><span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span>
+            <span class="hljs-tag" style="color: navy; font-weight: 400;">&lt;/<span class="hljs-name" style="color: navy; font-weight: 400;">div</span>&gt;</span></pre>
+         </div>
+
+        <p>To create animations use this Javascript code:</p>
+        <div class="code-view">
+            <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(51, 51, 51); background: rgb(248, 248, 248);">$(<span class="hljs-string" style="color: rgb(221, 17, 68);">'#out'</span>).click(() =&gt; {
+                $(<span class="hljs-string" style="color: rgb(221, 17, 68);">'.fade-preview'</span>).eq(<span class="hljs-number" style="color: teal;">0</span>).fadeOut(<span class="hljs-number" style="color: teal;">500</span>);
+            });
+            $(<span class="hljs-string" style="color: rgb(221, 17, 68);">'#in'</span>).click(() =&gt; {
+                $(<span class="hljs-string" style="color: rgb(221, 17, 68);">'.fade-preview'</span>).eq(<span class="hljs-number" style="color: teal;">0</span>).fadeIn(<span class="hljs-number" style="color: teal;">500</span>);
+            });
+            $(<span class="hljs-string" style="color: rgb(221, 17, 68);">'#toggle'</span>).click(() =&gt; {
+                $(<span class="hljs-string" style="color: rgb(221, 17, 68);">'.fade-preview'</span>).eq(<span class="hljs-number" style="color: teal;">1</span>).fadeToggle(<span class="hljs-number" style="color: teal;">500</span>);
+            });</pre>
+        </div>
+
+        <footer class="mb-20"></footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
